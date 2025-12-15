@@ -1,0 +1,114 @@
+      .stylethisdiv {
+        font-family: "Outfit";
+        margin-left: 18px;
+        text-align: center;
+        margin-top: 200px;
+        font-size: 17px;
+        
+      }
+      
+      
+      
+      
+      /*.csstitle {
+        font-size: 50px;
+        font-weight:700;
+        font-family: "Dancing Script";
+        margin-left: 10px;
+        margin-bottom: 50px;
+        text-align: center;
+      }*/
+
+      
+      .cssstartbut {
+        color: rgb(255, 255, 255);
+        background-color: black;
+        border-radius: 16px;
+        border: none;
+        padding: 11px 18px;
+        font-size: 17px;
+        margin-top: 10px;
+        font-family: "Outfit";
+        cursor: pointer;
+      }
+      .cssstartbut:hover {
+        color: rgb(249, 255, 73);
+        background-color: rgb(0, 0, 0);
+        border-radius: 16px;
+        border: none;
+        padding: 10.3px 61px;
+        font-size: 17px;
+        margin-top: 10px;
+        font-family: "Outfit";
+        cursor: pointer;
+      }
+
+      .csssendbut {
+        color: rgb(255, 255, 255);
+        background-color: black;
+        border-radius: 12px;
+        border: none;
+        padding: 4px 13px;
+        padding-top: 2px;
+        font-size: 20px;
+        font-family: "Outfit";
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      .csssendbut:hover {
+        color: rgb(249, 255, 73);
+        background-color: black;
+        border-radius: 12px;
+        border: none;
+        padding: 4px 13px;
+        padding-top: 2px;
+        font-size: 20px;
+        font-family: "Outfit";
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+      .cssrefreshbut {
+        color: rgb(255, 255, 255);
+        background-color: black;
+        border-radius: 12px;
+        border: none;
+        padding: 8px 15px;
+        font-size: 15px;
+        font-family: "Outfit";
+        cursor: pointer;
+      }
+
+      .cssrefreshbut:hover {
+        color: rgb(249, 255, 73);
+        background-color: rgb(0, 0, 0);
+        border-radius: 12px;
+        border: none;
+        padding: 7.3px 40.5px;
+        font-size: 15px;
+        font-family: "Outfit";
+        cursor: pointer;
+      }
+
+      /*.testtextparag {
+        margin-top: 200px;
+      }*/
+
+      .css-input {
+        appearance: none;
+        cursor: pointer;
+        &::-webkit-slider-thumb {
+          appearance: none;
+          background-color: yellow;
+          width: 7px;
+          height: 20px;
+          margin-top: -7.5px;
+          border-radius: 3px;
+        }
+
+        &::-webkit-slider-runnable-track {
+          background-color: rgb(247, 245, 245);
+          height: 5px;
+          border-radius: 3px;
+        }
+      }
