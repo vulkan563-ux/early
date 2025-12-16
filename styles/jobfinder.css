@@ -1,23 +1,72 @@
-      .stylethisdiv {
+      /*.stylethisdiv {
         font-family: "Outfit";
         margin-left: 18px;
         text-align: center;
         margin-top: 200px;
         font-size: 17px;
         
-      }
-      
-      
-      
-      
-      /*.csstitle {
-        font-size: 50px;
-        font-weight:700;
-        font-family: "Dancing Script";
-        margin-left: 10px;
-        margin-bottom: 50px;
-        text-align: center;
       }*/
+      
+
+      
+
+      
+      
+      @media (max-width: 2560px) {
+        .stylethisdiv {
+        font-family: "Outfit";
+        margin-left: 25px;
+        text-align: center;
+        margin-top: 200px;
+        font-size: 25px;
+        margin-right: 25px;
+
+        .testtextparag {
+          margin-left: 100px;
+          margin-right: 100px;
+        }
+        
+      }
+      }
+
+      /*@media (max-width: 480px) {
+        .stylethisdiv {
+        font-family: "Outfit";
+        font-size: 14px;
+        margin: 10px;
+      }
+      }*/
+      
+      
+      
+      @media (max-width: 600px) {
+
+        .stylethisdiv {
+          font-size: 14px;
+          margin-left: 50px;
+          margin-right: 50px;
+        
+          .testtextparag {
+          font-size: 14px;
+          margin-left: 0px;
+          margin-right: 0;
+        }
+        }
+
+        
+
+        
+
+        .csssendbut {
+          margin-top: 25px;
+        }
+
+        .css-input {
+          width: 100%;
+        }
+      }
+
+
 
       
       .cssstartbut {
@@ -90,10 +139,6 @@
         cursor: pointer;
       }
 
-      /*.testtextparag {
-        margin-top: 200px;
-      }*/
-
       .css-input {
         appearance: none;
         cursor: pointer;
@@ -112,3 +157,5 @@
           border-radius: 3px;
         }
       }
+
+      

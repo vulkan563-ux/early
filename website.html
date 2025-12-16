@@ -2,79 +2,15 @@
 <html>
   <head>
     <title>Job finder</title>
-    <link rel="stylesheet" href="styles/jobfinder.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="styles/jobfinder.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    
-    <div class="changethis stylethisdiv">
-    </div>
-    
-    <!--
-    <p>
-      1)Do you like talking?
-    <button
-    onclick="
-    newjobs = jobs.filter(job => job.talk > 0.5);
-    displayjob(newjobs)
-    ">
-      Yes
-    </button>
-    <button onclick="
-    newjobs = jobs.filter(job => job.talk < 0.5);
-    displayjob(newjobs)
-    ">
-      No
-    </button>
-    <button onclick="
-    newjobs =jobs.filter(job => job.talk >= 0.3 && job.talk <= 0.7);
-    displayjob(newjobs)
-    ">
-      50/50
-    </button>
-    </p>
-
-    <p>
-      2) Do you like routine?
-    <button onclick="
-    newjobs =newjobs.filter(job => job.routine > 0.5);
-    displayjob(newjobs)
-    ">
-      Yes
-    </button>
-    <button onclick="
-    newjobs =newjobs.filter(job => job.routine < 0.5);
-    displayjob(newjobs)
-    ">
-      No
-    </button>
-    <button onclick="
-    newjobs =newjobs.filter(job => job.routine >= 0.3 && job.routine <= 0.7);
-    displayjob(newjobs)
-    ">
-      50/50
-    </button>
-    </p>
-    <button
-    onclick="
-    newjobs = [];
-    document.querySelector('.result').innerHTML = 'Refreshed';
-    ">Refresh algorithm</button>
-    <p class="result">
-      Here the result will be displayed
-    </p>
-    <input type="range" class="range">
-    <button
-    onclick="
-    console.log(document.querySelector('.range').value);
-    ">Display</button>
-    -->
-   
-    <script type="module" src="scripts/jobfinder.js">
-    </script>
+    <div class="changethis stylethisdiv"></div>
+    <script type="module" src="scripts/jobfinder.js"></script>
   </body>
-
 </html>

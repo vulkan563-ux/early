@@ -16,5 +16,11 @@ export const questions = [
   param1: 'extreme',
   bp1: 0.4,
   bp2: 0.6,
+},
+{
+  question: 'Do you like sedentary jobs? (jobs with minimal phisical activity)',
+  param1: 'sedentary',
+  bp1: 0.4,
+  bp2: 0.6,
 }
 ];

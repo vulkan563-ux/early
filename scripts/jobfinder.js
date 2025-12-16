@@ -1,107 +1,6 @@
  import { jobs } from '../data/jobs.js';
  import { questions } from '../data/questions.js';
  
- 
-      
-      /*function displayjob(newjobs) {
-        console.log(newjobs);
-    let newjobslocal = '';
-    newjobs.forEach((job) => {
-      newjobslocal += ` ${job.name}`
-    });
-    jobsmessage = ` Your jobs are following:${newjobslocal}`;
-    document.querySelector('.result').innerHTML = jobsmessage;
-      };
-    
-    
-    document.querySelector('.startbutton').addEventListener('click', () => {
-      document.querySelector('.changethis').innerHTML = `
-      <p>
-        1)Do you like talking?
-      </p>
-      <input type = "range" class="inputs">
-      <button class="sendbuttons csssendbut">
-        Send
-      </button>`;
-      document.querySelector('.sendbuttons').addEventListener('click', () => {
-        changethearray();
-        showsecquest()
-      })
-    });
-        
-        
-      };
-
-      function changethearray1(condition) {
-        let currentvalue = document.querySelector('.inputs').value;
-        let weight = currentvalue/100;
-        if (weight >= 0.6) {
-          newjobs =newjobs.filter(job => job.routine >= 0.6)
-        }
-        else if (weight <= 0.4) {
-          newjobs =newjobs.filter(job => job.routine <= 0.4)
-        } 
-        else {
-          newjobs =newjobs.filter(job => job.routine > 0.4 && job.routine < 0.7)
-        }
-      };
-
-      function showsecquest() {
-          document.querySelector('.changethis').innerHTML = `
-        <p>
-          2) Do you like routine?
-        </p>
-        <input type = "range" class="inputs">
-        <button class="sendbuttons csssendbut
-        ">
-          Send
-        </button>`;
-        document.querySelector('.sendbuttons').addEventListener('click', () => {
-        changethearray1();
-        showtheend()
-      })
-      };
-
-      function showtheend() {
-          document.querySelector('.changethis').innerHTML = `
-        <p>
-          Your ideal occupations are ... ${returnjobs()}
-        </p>
-        <button class="refreshbut cssrefreshbut">
-          Refresh
-        </button>`;
-        document.querySelector('.refreshbut').addEventListener('click', () => {
-          refresh()
-        })
-      }
-
-     refresh() {
-        
-        document.querySelector('.changethis').innerHTML = `
-        <p>
-          This is the early version of the algorithm, that helps to find the job (jobs), which match your characteristics 
-        </p>
-        <p>
-          <button class="startbutton cssstartbut">
-            Start
-          </button>
-        </p>`
-        newjobs = [];
-        document.querySelector('.startbutton').addEventListener('click', () => {
-      document.querySelector('.changethis').innerHTML = `
-      <p>
-        1)Do you like talking?
-      </p>
-      <input type = "range" class="inputs">
-      <button class="sendbuttons csssendbut">
-        Send
-      </button>`;
-      document.querySelector('.sendbuttons').addEventListener('click', () => {
-        changethearray();
-        showsecquest()
-      })
-    });
-      };*/
 
       let filteredJobs = jobs;
       let state = 'starting';
@@ -115,7 +14,7 @@
           let elem = document.querySelector('.changethis');
           elem.innerHTML = `
             <p class="testtextparag">
-              This is the early version of the algorithm, that helps to find the job (jobs), which match your characteristics 
+              This is the early version of the algorithm, that helps to find the job (jobs), which match your characteristics
             </p>
             <p>
               <button class="startbutton cssstartbut"  >
@@ -235,17 +134,20 @@
         } 
         console.log(filteredJobs);
         };
+
         function returnjobs() {
         let string = '';
         
-        if (filteredJobs.length === 1) {
-          filteredJobs.forEach((job) => {
-          string += `${job.name}`
-        })
-      } else {
+
         filteredJobs.forEach((job) => {
-          string += `${job.name}, `
-        })}
+          if (job === filteredJobs[filteredJobs.length - 1]) {
+            string += `${job.name} .`
+          }
+          else {
+            string += `${job.name}, `
+          }
+        })
+
         return string
       };
       renderHTML();
