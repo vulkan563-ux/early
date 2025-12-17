@@ -1,10 +1,7 @@
-      /*.stylethisdiv {
-        font-family: "Outfit";
-        margin-left: 18px;
-        text-align: center;
-        margin-top: 200px;
-        font-size: 17px;
-        
+      /*body {
+        min-height: 200svh;
+        display: grid;
+        place-items: center;
       }*/
       
 
@@ -12,13 +9,13 @@
 
       
       
-      @media (max-width: 2560px) {
+      @media (max-width: 4000px) {
         .stylethisdiv {
         font-family: "Outfit";
-        margin-left: 25px;
-        text-align: center;
-        margin-top: 310px;
         font-size: 25px;
+        text-align: center;
+        margin-left: 25px;
+        margin-top: 310px;
         margin-right: 25px;
 
         .testtextparag {
@@ -29,13 +26,6 @@
       }
       }
 
-      /*@media (max-width: 480px) {
-        .stylethisdiv {
-        font-family: "Outfit";
-        font-size: 14px;
-        margin: 10px;
-      }
-      }*/
       
       
       
@@ -45,7 +35,7 @@
           font-size: 14px;
           margin-left: 50px;
           margin-right: 50px;
-            margin-top: 310px;
+          margin-top: 310px;
         
           .testtextparag {
           font-size: 14px;
@@ -145,21 +135,19 @@
         cursor: pointer;
         &::-webkit-slider-thumb {
           appearance: none;
-          background-color: yellow;
+          background-color:rgb(249, 255, 73);
           width: 7px;
           height: 20px;
           margin-top: -7.5px;
           border-radius: 3px;
+          /*border: 1px solid black;*/
         }
 
         &::-webkit-slider-runnable-track {
-          background-color: rgb(247, 245, 245);
+          background-color: rgb(241, 241, 241);
           height: 5px;
           border-radius: 3px;
         }
       }
 
-
       
-
-

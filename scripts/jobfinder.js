@@ -54,6 +54,36 @@
           <button class="sendbuttons csssendbut">
             &#8594;
           </button>`;
+         
+          /* Тут я пытался сделать удобства, но немного не задалось в тот момент)
+          document.querySelector('.inputs').addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') {
+              document.querySelector('.inputs').value += 5
+            }
+          });
+          
+          document.querySelector('.inputs').addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowLeft') {
+              document.querySelector('.inputs').value -= 5
+            }
+          });
+          
+          document.querySelector('.inputs').addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+              changethearray(questionObject);
+            
+              if (numberOfQuestion === questions.length) {
+                answeredquestions ++; 
+                state = 'finished'; 
+                renderHTML();
+              } else {
+                answeredquestions ++; 
+                renderHTML();
+              }
+            }
+          });*/
+
+          
 
 
           document.querySelector('.sendbuttons').addEventListener('click', () => {
