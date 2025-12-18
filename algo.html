@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Matches</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: "Arial";
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .main {
+        font-style: italic;
+        margin-bottom: 50px;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <p class="title">
+      Алгоритм вычесляющие исходы с 1+ профессиями
+    </p>
+    <p class="main">
+      Чтобы дальше выявлять параметры можно использовать хороший метод - найти те расклады где результат будет n>1 профессий. И сравнить интуитивно эти профессии - там будут обнаружены различия. Алгоритм сделан таким образом что мы сравниваем профессии комбинациями(парами). Снизу выделены теперь уже все возможные комбинации при определенных ходах(если input range от 0 до 100, то L - это значение [0,40] а R - [60,100])
+    </p>
+   <pre class="putHere" style="font-family: inherit; white-space: pre-wrap;"></pre>
+    <script type="module">
+      import { findPairs } from '/data/findPairs.js';  /* Import the function */
+
+      document.querySelector('.putHere').innerHTML = findPairs();
+      console.log(findPairs())
+    </script>
+</body>
+</html>

@@ -1,5 +1,6 @@
  import { jobs } from '../data/jobs.js';
  import { questions } from '../data/questions.js';
+ import { findPairs } from '../data/findPairs.js';
  
 
       let filteredJobs = jobs;
@@ -152,7 +153,7 @@
       function changethearray(obj) {
         let currentvalue = document.querySelector('.inputs').value;
         let weight = currentvalue/100;
-        console.log(filteredJobs);
+       
         
     
 
@@ -162,7 +163,7 @@
         else if (weight <= obj.bp1) {
           filteredJobs = filteredJobs.filter(job => job[obj.param1] <= obj.bp1)
         } 
-        console.log(filteredJobs);
+      
         };
 
         function returnjobs() {
@@ -180,4 +181,10 @@
 
         return string
       };
+
+
+   
+
+
       renderHTML();
+      console.log(findPairs());
